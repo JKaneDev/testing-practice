@@ -7,3 +7,7 @@ export function capitalize(string) {
 		return capitalized;
 	}
 }
+
+export function reverseString(string) {
+	return string.split('').reverse().join('');
+}
