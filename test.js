@@ -1,4 +1,11 @@
-import { capitalize, reverseString, add, subtract } from './script.js';
+import {
+	capitalize,
+	reverseString,
+	add,
+	subtract,
+	multiply,
+	divide,
+} from './script.js';
 
 // capitalize function
 
@@ -41,4 +48,16 @@ test('subtracts two given integers', () => {
 	expect(subtract(2, 2)).toEqual(0);
 	expect(subtract(32, 27)).toEqual(5);
 	expect(subtract(987, 267)).toEqual(720);
+});
+
+test('multiplies two integers', () => {
+	expect(multiply(2, 2)).toEqual(4);
+	expect(multiply(12, 12)).toEqual(144);
+	expect(multiply(123, 67)).toEqual(8241);
+});
+
+test('divides two integers', () => {
+	expect(divide(2, 2)).toEqual(1);
+	expect(divide(144, 12)).toEqual(12);
+	expect(divide(7936, 64)).toEqual(124);
 });
