@@ -61,3 +61,7 @@ test('divides two integers', () => {
 	expect(divide(144, 12)).toEqual(12);
 	expect(divide(7936, 64)).toEqual(124);
 });
+
+test('applies caesar cipher to string, shifts characters by given value', () => {
+	expect(caesar('james', 1)).toEqual('kbnft');
+});
