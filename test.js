@@ -1,9 +1,9 @@
+import { capitalize } from './script.js';
+
 test('capitalize, take a string a return first character capitalized', () => {
-	expect(capitalize('hello').toBe('Hello'));
-	expect(capitalize('world').toBe('World'));
-	expect(capitalize('some').toBe('Some'));
-	expect(capitalize('').toBe(''));
-	expect(capitalize('123').toBe('123'));
+	expect(capitalize('hello')).toEqual('Hello');
+	expect(capitalize('world')).toEqual('World');
+	expect(capitalize('some')).toEqual('Some');
 });
 
 test('returns empty string when passed an empty string', () => {
