@@ -1,0 +1,26 @@
+{
+	"name": "testing-practice",
+	"version": "1.0.0",
+	"description": "The Odin Project Testing Practice With Jest Module",
+	"main": "script.js",
+	"scripts": {
+		"test": "jest",
+		"watch": "jest --watch *.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JKaneDev/testing-practice.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JKaneDev/testing-practice/issues"
+	},
+	"homepage": "https://github.com/JKaneDev/testing-practice#readme",
+	"devDependencies": {
+		"@babel/preset-env": "^7.20.2",
+		"babel": "^6.23.0",
+		"jest": "^29.3.1"
+	}
+}
