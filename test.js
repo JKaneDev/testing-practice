@@ -1,4 +1,4 @@
-import { capitalize } from './script.js';
+import { capitalize, reverseString } from './script.js';
 
 test('capitalize, take a string a return first character capitalized', () => {
 	expect(capitalize('hello')).toEqual('Hello');
@@ -16,4 +16,11 @@ test('returns the same string when passed a number', () => {
 
 test('returns the same string when passed special characters', () => {
 	expect(capitalize('!@#')).toBe('!@#');
+});
+
+test('returns given string reversed', () => {
+	expect(reverseString('hello').toEqual('olleh'));
+	expect(reverseString('hello').toEqual('enak semaj'));
+	expect(reverseString('i like coding').toEqual('gnidoc ekil i'));
+	expect(reverseString('123456789').toEqual('987654321'));
 });
