@@ -74,3 +74,19 @@ test('expect caesar to wrap from z to a', () => {
 test('caesar deals with punctuation correctly', () => {
 	expect(caesar(',', 1)).toBe(',');
 });
+
+test('returns average of integers in array', () => {
+	expect(analyze([2, 5, 12, 24, 18])).toHaveProperty('average', 12);
+});
+
+test('returns lowest number in integer array', () => {
+	expect(analyze([2, 5, 12, 24, 18])).toHaveProperty('min', 2);
+});
+
+test('returns largest number in integer array', () => {
+	expect(analyze([2, 5, 12, 24, 18])).toHaveProperty('max', 24);
+});
+
+test('returns the length of the given array', () => {
+	expect(analyze([2, 5, 12, 24, 18])).toHaveProperty('length', 5);
+});
