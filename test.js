@@ -5,6 +5,7 @@ import {
 	subtract,
 	multiply,
 	divide,
+	caesar,
 } from './script.js';
 
 // capitalize function
@@ -64,4 +65,12 @@ test('divides two integers', () => {
 
 test('applies caesar cipher to string, shifts characters by given value', () => {
 	expect(caesar('james', 1)).toEqual('kbnft');
+});
+
+test('expect caesar to wrap from z to a', () => {
+	expect(caesar('z', 1)).toBe('a');
+});
+
+test('caesar deals with punctuation correctly', () => {
+	expect(caesar(',', 1)).toBe(',');
 });
