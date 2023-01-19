@@ -6,6 +6,7 @@ import {
 	multiply,
 	divide,
 	caesar,
+	analyze,
 } from './script.js';
 
 // capitalize function

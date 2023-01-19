@@ -33,3 +33,19 @@ export function caesar(string, shift) {
 	}
 	return result;
 }
+
+export function analyze(array) {
+	const length = array.length;
+	const average = Math.round(
+		[...array].reduce((acc, val) => acc + val, 0) / length
+	);
+	const min = Math.min(...array);
+	const max = Math.max(...array);
+
+	return {
+		length,
+		average,
+		min,
+		max,
+	};
+}
